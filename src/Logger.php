@@ -43,7 +43,7 @@ class Logger
      * @param LoggerInterface|callable $logger
      * @param string|callable Constant or callable that accepts a Response.
      */
-    public function __construct($logger, $formatter = null)
+    public function __construct($logger, ?$formatter = null)
     {
         // Use the setters to take care of type validation
         $this->setLogger($logger);
